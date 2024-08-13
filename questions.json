@@ -1,0 +1,47 @@
+[
+    {
+        "niveau": "facile",
+        "questions": [
+            {
+                "question": "Quelle est la capitale de la France ?",
+                "options": ["Paris", "Londres", "Berlin", "Madrid"],
+                "reponse": "Paris"
+            },
+            {
+                "question": "Combien de continents y a-t-il sur Terre ?",
+                "options": ["5", "6", "7", "8"],
+                "reponse": "7"
+            }
+        ]
+    },
+    {
+        "niveau": "intermediaire",
+        "questions": [
+            {
+                "question": "Qui a peint la Joconde ?",
+                "options": ["Vincent Van Gogh", "Claude Monet", "Leonardo da Vinci", "Pablo Picasso"],
+                "reponse": "Leonardo da Vinci"
+            },
+            {
+                "question": "Quel est le plus grand océan du monde ?",
+                "options": ["Océan Atlantique", "Océan Indien", "Océan Arctique", "Océan Pacifique"],
+                "reponse": "Océan Pacifique"
+            }
+        ]
+    },
+    {
+        "niveau": "difficile",
+        "questions": [
+            {
+                "question": "Quelle est la vitesse de la lumière ?",
+                "options": ["299 792 458 m/s", "150 000 000 m/s", "1 080 000 000 m/s", "300 000 000 m/s"],
+                "reponse": "299 792 458 m/s"
+            },
+            {
+                "question": "Quel est le nombre premier suivant après 31 ?",
+                "options": ["33", "37", "39", "41"],
+                "reponse": "37"
+            }
+        ]
+    }
+]

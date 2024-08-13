@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Millionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Section du score -->
+<div id="score" class="hidden">
+    <h2>Votre Score</h2>
+    <p id="scoreValue"></p>
+    <ul id="scoreList"></ul>
+    <button id="restartButton">Recommencer</button>
+</div>
+
+    <!-- Menu horizontal en haut de la page -->
+    <div id="menu">
+        <h1>QUIZ JOUEZ ET GAGNEZ</h1>
+        <button id="startButton">Commencez!</button>
+    </div>
+
+    <audio id="backgroundMusic" src="audio.MP3" loop autoplay></audio>
+    <audio id="backgroundMusic1" src="audio1.MP3" loop></audio>
+
+    <audio id="correctSound" src="correct.MP3"></audio>
+    <audio id="wrongSound" src="wrong.MP3"></audio>
+    <audio id="clickSound" src="click.MP3"></audio>
+
+    <div id="app">
+        <!-- Page d'accueil -->
+        <div id="home" class="hidden">
+            <h2>JOUEZ ET GAGNEZ</h2>
+        </div>
+        
+        <!-- Page de connexion -->
+        <div id="login" class="hidden">
+            <h2>Connexion</h2>
+            <input type="text" id="username" placeholder="Nom d'utilisateur">
+            <input type="password" id="password" placeholder="Mot de passe">
+            <button id="loginButton">Se connecter</button>
+            <h3>Comptes existants</h3>
+            <div id="existingAccounts"></div>
+        </div>
+        
+        <!-- Section du quiz -->
+        <div id="quiz" class="hidden">
+            <h2 id="question"></h2>
+            <div id="options">
+                <!-- Les options de réponse seront générées ici -->
+            </div>
+            <button id="nextButton" class="hidden">Suivant</button>
+            <p id="timer"></p>
+        </div>
+
+        <!-- Section du score -->
+        <div id="score" class="hidden">
+            <h2>Votre Score</h2>
+            <p id="scoreValue"></p>
+            <button id="restartButton">Recommencer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

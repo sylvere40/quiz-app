@@ -1,0 +1,15 @@
+{
+    "users": [
+      {
+        "username": "joueur1",
+        "password": "motdepasse1",
+        "scores": [10, 8, 7]
+      },
+      {
+        "username": "joueur2",
+        "password": "motdepasse2",
+        "scores": [9, 6, 10]
+      }
+    ]
+  }
+  

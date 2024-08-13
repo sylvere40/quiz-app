@@ -1,0 +1,151 @@
+/* Style pour le menu en haut de la page */
+#menu {
+    background-color: rgba(185, 174, 174, 0.897); /* Fond noir semi-transparent */
+    color: #95efe4; /* Couleur claire */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1000; /* Assurer que le menu est au-dessus du contenu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+/* Style général du corps */
+body {
+    font-family: 'Press Start 2P', cursive; /* Police de jeu rétro */
+    background: url('image.png') no-repeat center center fixed; 
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 80px; /* Ajouter un padding pour éviter que le contenu soit caché par le menu */
+}
+
+/* Conteneur principal */
+#app {
+    background: rgba(209, 199, 199, 0.8); /* Fond noir semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    width: 350px;
+    text-align: center;
+}
+
+/* Cacher les éléments invisibles */
+.hidden {
+    display: none;
+}
+
+/* Styles des titres */
+h2, h3 {
+    font-size: 28px;
+    margin: 0;
+    color: #120f02; /* Couleur dorée */
+    text-shadow: 0 0 10px rgba(24, 22, 7, 0.8); /* Effet de lueur dorée */
+    margin-bottom: 15px;
+}
+
+/* Animation des titres */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.8); }
+    50% { text-shadow: 0 0 15px rgba(255, 215, 0, 1); }
+    100% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.8); }
+}
+h2, h3 {
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+/* Style des boutons */
+button {
+    background-color: #4899a5ef; /* Couleur orange vif */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.8); /* Effet de lueur */
+}
+
+/* Effets de survol et d'activation des boutons */
+button:hover {
+    background-color: #47ff5f; /* Couleur tomate */
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+/* Style des champs de saisie */
+input {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #FFD700; /* Bordure dorée */
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style pour les options du quiz */
+#options {
+    margin-top: 20px;
+}
+
+/* Style du timer */
+#timer {
+    font-size: 20px;
+    color: #FF4500;
+    text-shadow: 0 0 5px rgba(255, 105, 180, 0.8);
+    margin-top: 10px;
+}
+
+/* Style de la section du score */
+#score {
+    margin-top: 20px;
+}
+
+#scoreValue {
+    font-size: 24px;
+    color: #f21414e0; /* Couleur dorée */
+    text-shadow: 0 0 10px rgba(225, 74, 44, 0.917);
+}
+
+
+
+
+/* Animation pour l'affichage des scores */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#scoreList li {
+    opacity: 0; /* Commence par être invisible */
+    animation: fadeIn 0.5s forwards; /* Animation d'apparition */
+    list-style: none; /* Supprimer les puces de la liste */
+    margin: 5px 0; /* Espacement entre les scores */
+    font-size: 18px; /* Taille de police des scores */
+    color: #00ff08; /* Couleur dorée pour les scores */
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.8); /* Effet de lueur */
+}
